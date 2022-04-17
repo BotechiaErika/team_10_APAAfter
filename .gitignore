@@ -1,0 +1,13 @@
+
+.idea
+.vscode
+node_modules
+*.codekit3
+
+config.codekit3
+.DS_Store
+
+.vscode/settings.json
+.vscode/extensions.json
+.vscode
+node_modules

@@ -1,33 +1,41 @@
-let locales = [{
-    idL: 0;
-    comunaID: 1
-    nameL: pL:
-}]
+const fs = require('fs')
+const path = require('path')
+    //REQUIRE PATH, READ FILE and SYNC JSON DOCUMENT
+const comunasFilePath = path.join(__dirname, '../data/comunasDataBase.json')
+const p00BaseFilePath = path.join(__dirname, '../data/p00_DataBase.json')
+    //JSON OBJECT --> JS OBJECT
+const comunas = JSON.parse(fs.readFileSync(comunasFilePath, 'utf-8'));
+const p00 = JSON.parse(fs.readFileSync(p00BaseFilePath, 'utf-8'));
 
+/* ******LANDING ******* */
 let controller = {
-    landingProducts: (req, res) => {
-        res.render('products/landingProducts', {
-            title: 'PRODUCTOS - CABA',
-            comunaID: 1,
-            comunaIncludes: "Retiro, San Nicolás, Puerto Madero, San Telmo, Montserrat y Constitución",
-            comunaParaghy: "La Comuna 1 está integrada por los 	barrios de  Retiro, San Nicolás, Puerto Madero, San Telmo, Montserrat y Constitución."
-
-        })
+    index: (req, res) => {
+        res.render('products/products00_telos', {
+            title: p00.title,
+            localsList: p00})
     },
-    comunas: (req, res) => {
-        const comunaID = req.params.comunaID
+    comunasP: (req, res) => {
+        let comunaID = req.params.comunaID
         res.render('products/productosComuna', {
             title: 'Comuna ' + comunaID
         })
     },
     detallesL: (req, res) => {
-        const idL = req.res.idL
+        let idLocal = req.params.idLocal
         res.render('products/comunaLocales', {
-            title: 'Local ' + idL,
-            {
-                comuna: 'comuna' + locales.comunaID,
-            }
-
+            title: 'Local ' + idLocal,
+        })
+    },
+    detallesR: (req, res) => {
+        let idRooms = req.params.idRooms
+        res.render('products/detallesP', {
+            title: 'Producto ' + idRooms,
+        })
+    },
+    listCABA: (req, res) => {
+        res.render('products/landingProducts', {
+            title: 'PRODUCTOS - CABA',
+            comunas: comunas
         })
     }
 }
