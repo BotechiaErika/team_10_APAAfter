@@ -22,17 +22,20 @@ let controller = {
         },
         listLocals: (req, res) => {
             let rgL = req.params.rgL;
+            let telos = req.query.telos;
+
+            telos = (req.body.telos)
+            telos = {
+                emailHotel = req.body.emailHotel,
+                telephoneHotel = req.body.telephoneHotel,
+                webPageHotel = req.body.webPageHotel,
+                addressHotel = req.body.addressHotel,
+                parkingHotel = req.body.parkingHotel,
+            }
+            console.log(telos)
         },
         storeLocal: (req, res) => {
-
-                class CreateTelo {
-                    constructor() {
-                        this.nameHotel = req.body.nameHotel,
-                            this.emailHotel = req.body.emailHotel,
-                            this.telephoneHotel = req.body.telephoneHotel,
-                            this.webPageHotel = req.body.webPageHotel,
-                            this.addressHotel = req.body.addressHotel,
-                            this.parkingHotel = req.body.parkingHotel,
-                            this.comuna = `Comuna: + ${req.body.comuna}`
-                        this.comuna = `Comuna: + ${req.body.comuna}`
             let newEJSON = fs.readFileSync(__dirname, "./newEJSON")
+            newEJSON = newE.push(JSON.stringify(newEJSON))
+        }
+        module.exports = controllers
