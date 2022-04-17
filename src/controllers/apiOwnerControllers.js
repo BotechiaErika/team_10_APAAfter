@@ -21,7 +21,6 @@ let controller = {
             })
         },
         listLocals: (req, res) => {
-            let rgL = req.params.rgL;
             let telos = req.query.telos;
 
             telos = (req.body.telos)
