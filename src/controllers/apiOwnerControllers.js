@@ -1,4 +1,4 @@
-const localesFilePath = path.join(__dirname, '../data/localAndRoomsDataBase.json')
+src / controllers / apiOwnerControllers.js
 const usersList = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
 const localsList = JSON.parse(fs.readFileSync(localesFilePath, 'utf-8'));
 let controller = {
