@@ -41,3 +41,4 @@ app.listen(process.env.PORT || 9994, () => {
     console.log('WS LEVANTADO Y CORRIENDO EN 9994')
 });
 module.exports = app()
+>>>>>>> Stashed changes
