@@ -1,6 +1,3 @@
-const fs = require('fs')
-const path = require('path')
-const usersFilePath = path.join(__dirname, '../data/usersDataBase.json')
 const localesFilePath = path.join(__dirname, '../data/localAndRoomsDataBase.json')
 const usersList = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
 const localsList = JSON.parse(fs.readFileSync(localesFilePath, 'utf-8'));
@@ -45,12 +42,4 @@ let controller = {
                             this.parkingHotel = req.body.parkingHotel,
                             this.comuna = `Comuna: + ${req.body.comuna}`
                         this.comuna = `Comuna: + ${req.body.comuna}`
-                        let createTelo = new CreateTelo()
-                        console.log(createTelo)
-                        let newEJSON = JSON.stringify(fs.readFileSync(createTelo))
-                        app.get(newEJSON, (req, res) => {
-                            newEJSON.push(__dirname, './../data/newEjson.json')
-                        })
-                    }
-                }
-                module.exports = controllers
+            let newEJSON = fs.readFileSync(__dirname, "./newEJSON")
