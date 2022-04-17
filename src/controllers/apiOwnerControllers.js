@@ -22,13 +22,6 @@ let controller = {
         },
         listLocals: (req, res) => {
             let rgL = req.params.rgL;
-            res.render('apiOwner/showLocals', {
-                title: 'listar Locales',
-                localsList: localsList
-            })
-        },
-        createLocal: (req, res) => {
-            res.render('apiOwner/newEnterprise.ejs', { title: "FORM EMPRESA" })
         },
         storeLocal: (req, res) => {
 
