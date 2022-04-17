@@ -65,41 +65,104 @@
                     <div class="col">
                         <div class="widget nueva_entrada">
                             <h3 class="titulo">Nueva Entrada</h3>
-                            <form action="/apaOwners/newEnterprise">
-                                <div class="col-10 col-lg-auto">
-                                    <label for="nameHotel" class="form-label">Nombre Empresa</label>
-                                    <input type="text" class="form-control" id="nameHotel" name="nameHotel" placeholder="Nombre Empresa" required />
-                                </div>
-                                <div class="col-10 col-lg-auto ">
-                                    <label for="emailHotel" class="form-label">Email para Envio de Propuesta</label>
-                                    <input type="text" class="form-control" id="emailHotel" name="emailHotel" placeholder="email@correo.com" required />
-                                </div>
-                                <div class="row">
-                                    <div class="col-10 col-md-4">
-                                        <label for="telephoneHotel" class="form-label">Telefono para Contacto</label>
-                                        <input type="text" class="form-control" id="telephoneHotel" name="telephoneHotel" placeholder="Telefono para Contacto" />
-                                    </div>
 
-                                    <div class="col-6 col-md-6">
-                                        <label class="form-label" for="webPageHotel">Web Site de la Empresa</label>
-                                        <input type="text" class="form-control" placeholder="www.web-empresa.com.ar" name="webPageHotel" id="webPageHote" />
+                            <div class="row ">
+                                <div class="col ">
+                                    <div class="card ">
+                                        <div class="card-body ">
+                                            <h5 class="card-title ">DADOS ACTUALIZADOS</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted ">CONFIRME LOS DATOS</h6>
+                                            <p class="card-text ">TU EMPRESA RECIBIRA UNA PROPUESA PERSONALIZADA PARA AYUDAR A SU NEGOCIO SER AUN MAS COMENTADO Y TU VIDA SER SIMPLIFICADA,</br> <strong class="text-alert"> SER EMPRENDEDOR ES PENSAR EN SOLUCIONES Y NO ENFOCAR EN PROBLEMAS!</strong></p>
+                                            <a href="<%=h.webPageHotel%>" class="card-link ">(web page link)</a>
+                                            <a href="<%=h.emailHotel%>" class="card-link ">(email para contacto)</a>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-6 col-sm-6 mb-3">
-                                        <label for="addressHotel" class="form-label">Dirección Clientes<br/>
+                            </div>
+                            <div class="row ">
+                                <div class="col ">
+                                    <div class="card ">
+                                        <div class="card-body ">
+                                            <h5 class="card-title ">Nombre Local:
+                                                <%=l.nameHotel%>
+                                            </h5>
+                                            <table class="table ">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col ">#</th>
+                                                        <th scope="col ">telefone para contacto:</th>
+                                                        <th scope="col ">
+                                                            <%=telephoneHotel%>
+                                                        </th>
+                                                        <th scope="col ">
+                                                            <a href="#deleteTel" type="button" class="btn btn-danger">DELETAR /button>
+                                                            <a href="editTel" type="button" class="btn btn-info">EDITAR DATO</a>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row ">1</th>
+                                                        <td>Mark</td>
+                                                        <td>Otto</td>
+                                                        <td>@mdo</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row ">2</th>
+                                                        <td>Jacob</td>
+                                                        <td>Thornton</td>
+                                                        <td>@fat</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row ">3</th>
+                                                        <td>Larry</td>
+                                                        <td>the Bird</td>
+                                                        <td>@twitter</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form action="/apaOwners/newEnterprise">
+                        <div class="col-10 col-lg-auto">
+                            <label for="nameHotel" class="form-label">Nombre Empresa</label>
+                            <input type="text" class="form-control" id="nameHotel" name="nameHotel" placeholder="Nombre Empresa" required />
+                        </div>
+                        <div class="col-10 col-lg-auto ">
+                            <label for="emailHotel" class="form-label">Email para Envio de Propuesta</label>
+                            <input type="text" class="form-control" id="emailHotel" name="emailHotel" placeholder="email@correo.com" required />
+                        </div>
+                        <div class="row">
+                            <div class="col-10 col-md-4">
+                                <label for="telephoneHotel" class="form-label">Telefono para Contacto</label>
+                                <input type="text" class="form-control" id="telephoneHotel" name="telephoneHotel" placeholder="Telefono para Contacto" />
+                            </div>
+
+                            <div class="col-6 col-md-6">
+                                <label class="form-label" for="webPageHotel">Web Site de la Empresa</label>
+                                <input type="text" class="form-control" placeholder="www.web-empresa.com.ar" name="webPageHotel" id="webPageHote" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 col-sm-6 mb-3">
+                                <label for="addressHotel" class="form-label">Dirección Clientes<br/>
                                         <span class="text-muted">(Direccion Principal)</span></label>
-                                        <input type="text" class="form-control" id="addressHotel" name="addressHotel" placeholder="nombre calle, numero, barrio" required />
-                                    </div>
-                                    <div class="col-12 col-sm-6 ">
-                                        <label for="parkingHotel" class="form-label">Garage-Playa Privada<br/> <span class="text-muted">(En caso de Haber)</span></label>
-                                        <input type="text" class="form-control" placeholder="Ubicacion Parking" name="parkingHotel" id="parkingHotel" />
-                                    </div>
-                                </div>
+                                <input type="text" class="form-control" id="addressHotel" name="addressHotel" placeholder="nombre calle, numero, barrio" required />
+                            </div>
+                            <div class="col-12 col-sm-6 ">
+                                <label for="parkingHotel" class="form-label">Garage-Playa Privada<br/> <span class="text-muted">(En caso de Haber)</span></label>
+                                <input type="text" class="form-control" placeholder="Ubicacion Parking" name="parkingHotel" id="parkingHotel" />
+                            </div>
+                        </div>
 
 
-                                <label for="comuna" class="form-label">Seleccionar Comuna</label>
-                                <select name="comuna" id="comuna" class="form-select">
+                        <label for="comuna" class="form-label">Seleccionar Comuna</label>
+                        <select name="comuna" id="comuna" class="form-select">
 <option value="0" selected disabled >Comuna y Barrios</option>
 <option value="1">1 - Retiro, San Nicolás, Puerto Madero, San Telmo, Montserrat y Constitución</option>
 <option value="2">2 - Recoleta</option>
@@ -117,10 +180,10 @@
 <option value="14">14 - Palermo</option>
 <option value="15">15 - Chacarita, Villa Crespo, La Paternal, Villa Ortúzar, Agronomía y Parque Chas</option>
 </select>
-                        </div>
-                        <div class="row">
-                            <div class="col-6 col-sm-6 mb-3">
-                                <label for="apaAnchorH class=" form-label ">Enlacee Interno Local</label>
+                </div>
+                <div class="row">
+                    <div class="col-6 col-sm-6 mb-3">
+                        <label for="apaAnchorH class=" form-label ">Enlacee Interno Local</label>
                                 <input type="text " type="text " class="form-control " id="apaAnchorH " name="apaAnchorH " placeholder="apa Anchor " required />
                             </div>
 							
@@ -146,11 +209,6 @@
                             </form>
                         </div>
                     </div>
-                    <div class="columna col-12 col-md-3 bg-dark mt-5 ">
-                        <%-include ('../partials/apiOwner/aside01_numbers')%>
-                    </div>
-                </div>
-        </div>
         </main>
     </div>
     </div>
