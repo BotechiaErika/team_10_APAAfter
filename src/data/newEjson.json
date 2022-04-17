@@ -1,0 +1,8 @@
+{
+    emailHotel: " ",
+    telephoneHotel: " ",
+    webPageHotel: " ",
+    addressHotel: " ",
+    parkingHotel: " ",
+    comuna: null
+}

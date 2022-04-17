@@ -1,14 +1,11 @@
 /***********settings****** */
-require('dotenv').config
+//require('dotenv').config
 const PORT = 6996
 const port = process.env.PORT || 6996
 const express = require('express')
-const path = require('path');
-const extType = path.extname('file')
-const methodOverride = require('method-override');
-const session = require('express-session');
-const metricsForEntry = require('./middlewares/metricsForEntry')
 const app = express()
+const path = require('path');
+
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, '/views'));
 /***********static  files***************************/
@@ -17,13 +14,8 @@ app.use(express.static(path.join(__dirname, './../public')));
 /***********middlewares expreess*******/
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-app.use(methodOverride('_method'));
-app.use(metricsForEntry);
-app.use(session({
-    secret: "myAPIAPAseccion",
-    resave: true,
-    saveUninitialized: true
-}));
+
+
 
 /**************APA MIDDLEWARES***************/
 
@@ -48,7 +40,7 @@ app.use('/buscarTelos', searchRouter)
 app.use('/ApaGame', gameAIRouter)
 app.use('/staff', staffRouter)
     /***********Server listen 6996****** */
-app.listen(port||PORT ,() => {
+app.listen(port || PORT, () => {
     console.log('WS LEVANTADO Y CORRIENDO EN 6996')
 })
 module.exports = app
