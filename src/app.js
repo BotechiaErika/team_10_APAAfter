@@ -33,6 +33,7 @@ app.use('/usuarios', usersRouter);
 app.use('/telos', productsRouter);
 app.use('/empresas', enterpriseRouter);
 app.use('/ApaOwners', apiOwnerRouter);
+<<<<<<< Updated upstream
 //app.use('/buscarApa', searchRouter)
 app.use('/ApaGame', gameAIRouter);
 // app.use('/staff', staffRouter);
@@ -41,4 +42,14 @@ app.listen(process.env.PORT || 9994, () => {
     console.log('WS LEVANTADO Y CORRIENDO EN 9994')
 });
 module.exports = app()
+=======
+app.use('/buscarTelos', searchRouter)
+app.use('/ApaGame', gameAIRouter)
+app.use('/staff', staffRouter)
+
+/***********Server listen 6996****** */
+app.listen(port || PORT, () => {
+    console.log('WS LEVANTADO Y CORRIENDO EN 6996')
+})
+module.exports = app
 >>>>>>> Stashed changes
