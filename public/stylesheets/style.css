@@ -1,8 +1,14 @@
-.bg-tosco {
-    background-color: #e03b6e;
-}
+@import "/core/normalize.css";
+@import "/core/style_fonts.css";
 
-.bodyPage {
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+</style>
+
+*{
+    box-sizing: border-box;
+  }
+  .bodyPage {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(12, 1fr);
@@ -155,4 +161,8 @@
     font-family: 'Overpass', sans-serif;
     font-size: 1.5rem;
     color: #dbd7ff;
+}
+
+.bg-tosco {
+    background-color: #e03b6e;
 }
