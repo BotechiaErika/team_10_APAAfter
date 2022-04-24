@@ -3,7 +3,7 @@ let controller = {
         res.render('staff/staff_00', { title: 'STAFF' })
     },
     staff01: (req, res) => {
-        res.render('staff/staff_05', { title: 'STAFF' })
+        res.render('products/products_telos', { title: 'STAFF' })
     },
     getByReserve: (req, res) => {
         idReserve = req.params.idReserve
