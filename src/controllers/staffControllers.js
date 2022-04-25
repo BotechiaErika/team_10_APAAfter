@@ -1,6 +1,6 @@
 let controller = {
     index: (req, res) => {
-        res.render('staff/staff_01', { title: 'STAFF' })
+        res.render('staff/login_staff', { title: 'STAFF' })
     },
     staff01: (req, res) => {
         res.render('products/products_telos', { title: 'STAFF' })
