@@ -1,4 +1,5 @@
 [{
+    "gRL": 1,
     "id": 1,
     "first_name": "Desiree",
     "last_name": "Finley",
@@ -7,7 +8,8 @@
     "category": "mantenimiento, cocina, recepcion , financeiro, manager, owner",
     "roll": "a, b, c, d, e, f,",
     "avatar": "https://robohash.org/quasilaboriosamexercitationem.png?size=250x250&set=set1"
-  }, {
+}, {
+    "gRL": 1,
     "id": 2,
     "first_name": "Hartwell",
     "last_name": "Croxford",
@@ -16,7 +18,8 @@
     "category": "mantenimiento, cocina, recepcion , financeiro, manager, owner",
     "roll": "a, b, c, d, e, f,",
     "avatar": "https://robohash.org/quideseruntminus.png?size=250x250&set=set1"
-  }, {
+}, {
+    "gRL": 1,
     "id": 3,
     "first_name": "Klara",
     "last_name": "O'Hanley",
@@ -25,7 +28,8 @@
     "category": "mantenimiento, cocina, recepcion , financeiro, manager, owner",
     "roll": "a, b, c, d, e, f,",
     "avatar": "https://robohash.org/officiaullamaccusantium.png?size=250x250&set=set1"
-  }, {
+}, {
+    "gRL": 1,
     "id": 4,
     "first_name": "Tonie",
     "last_name": "Leachman",
@@ -34,7 +38,8 @@
     "category": "mantenimiento, cocina, recepcion , financeiro, manager, owner",
     "roll": "a, b, c, d, e, f,",
     "avatar": "https://robohash.org/molestiascumet.png?size=250x250&set=set1"
-  }, {
+}, {
+    "gRL": 1,
     "id": 5,
     "first_name": "Bondie",
     "last_name": "Corish",
@@ -43,7 +48,8 @@
     "category": "mantenimiento, cocina, recepcion , financeiro, manager, owner",
     "roll": "a, b, c, d, e, f,",
     "avatar": "https://robohash.org/veritatiseumhic.png?size=250x250&set=set1"
-  }, {
+}, {
+    "gRL": 1,
     "id": 6,
     "first_name": "Traci",
     "last_name": "Vaszoly",
@@ -52,7 +58,8 @@
     "category": "mantenimiento, cocina, recepcion , financeiro, manager, owner",
     "roll": "a, b, c, d, e, f,",
     "avatar": "https://robohash.org/officiaitaquemaxime.png?size=250x250&set=set1"
-  }, {
+}, {
+    "gRL": 1,
     "id": 7,
     "first_name": "Retha",
     "last_name": "Caldwall",
@@ -61,7 +68,8 @@
     "category": "mantenimiento, cocina, recepcion , financeiro, manager, owner",
     "roll": "a, b, c, d, e, f,",
     "avatar": "https://robohash.org/adipiscihicin.png?size=250x250&set=set1"
-  }, {
+}, {
+    "gRL": 1,
     "id": 8,
     "first_name": "Henrie",
     "last_name": "Morales",
@@ -70,7 +78,8 @@
     "category": "mantenimiento, cocina, recepcion , financeiro, manager, owner",
     "roll": "a, b, c, d, e, f,",
     "avatar": "https://robohash.org/nonfacilissapiente.png?size=250x250&set=set1"
-  }, {
+}, {
+    "gRL": 1,
     "id": 9,
     "first_name": "Janek",
     "last_name": "Scuffham",
@@ -79,7 +88,8 @@
     "category": "mantenimiento, cocina, recepcion , financeiro, manager, owner",
     "roll": "a, b, c, d, e, f,",
     "avatar": "https://robohash.org/quiaaliquamomnis.png?size=250x250&set=set1"
-  }, {
+}, {
+    "gRL": 1,
     "id": 10,
     "first_name": "Allina",
     "last_name": "Dain",
@@ -88,7 +98,8 @@
     "category": "mantenimiento, cocina, recepcion , financeiro, manager, owner",
     "roll": "a, b, c, d, e, f,",
     "avatar": "https://robohash.org/laboredoloresaperiam.png?size=250x250&set=set1"
-  }, {
+}, {
+    "gRL": 1,
     "id": 11,
     "first_name": "Devina",
     "last_name": "Saffon",
@@ -97,7 +108,9 @@
     "category": "mantenimiento, cocina, recepcion , financeiro, manager, owner",
     "roll": "a, b, c, d, e, f,",
     "avatar": "https://robohash.org/voluptasoptioofficia.png?size=250x250&set=set1"
-  }, {
+}, {
+
+    "gRL": 1,
     "id": 12,
     "first_name": "Larina",
     "last_name": "Hartly",
@@ -106,7 +119,8 @@
     "category": "mantenimiento, cocina, recepcion , financeiro, manager, owner",
     "roll": "a, b, c, d, e, f,",
     "avatar": "https://robohash.org/temporedolorumquisquam.png?size=250x250&set=set1"
-  }, {
+}, {
+    "gRL": 1,
     "id": 13,
     "first_name": "Christophorus",
     "last_name": "Szapiro",
@@ -115,7 +129,8 @@
     "category": "mantenimiento, cocina, recepcion , financeiro, manager, owner",
     "roll": "a, b, c, d, e, f,",
     "avatar": "https://robohash.org/architectolaudantiumrerum.png?size=250x250&set=set1"
-  }, {
+}, {
+    "gRL": 1,
     "id": 14,
     "first_name": "Matilde",
     "last_name": "Carren",
@@ -124,7 +139,8 @@
     "category": "mantenimiento, cocina, recepcion , financeiro, manager, owner",
     "roll": "a, b, c, d, e, f,",
     "avatar": "https://robohash.org/voluptatemdoloresquaerat.png?size=250x250&set=set1"
-  }, {
+}, {
+    "gRL": 1,
     "id": 15,
     "first_name": "Moreen",
     "last_name": "Gallihaulk",
@@ -133,4 +149,4 @@
     "category": "mantenimiento, cocina, recepcion , financeiro, manager, owner",
     "roll": "a, b, c, d, e, f,",
     "avatar": "https://robohash.org/eosarchitectoexercitationem.png?size=250x250&set=set1"
-  }]
+}]
