@@ -1,6 +1,6 @@
 let controller = {
     index: (req, res) => {
-        res.render('staff/staff_00', { title: 'STAFF' })
+        res.render('staff/staff_01', { title: 'STAFF' })
     },
     staff01: (req, res) => {
         res.render('products/products_telos', { title: 'STAFF' })
@@ -12,7 +12,7 @@ let controller = {
         })
     },
     createID: (req, res) => {
-        res.render('staff/staff_04', { title: 'CADASTRO NUEVO STAFF' })
+        res.render('staff/staff_00', { title: 'CADASTRO NUEVO STAFF' })
     }
 }
 

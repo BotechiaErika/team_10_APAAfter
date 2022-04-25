@@ -1,0 +1,18 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"colorWheel.settings.workspaceColor": "hsl(341,94%,20%)"
+	},
+	"extensions": {
+		"recommendations": [
+			"ZainChen.json"
+		]
+	}
+}
