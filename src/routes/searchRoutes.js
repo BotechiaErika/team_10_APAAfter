@@ -1,7 +1,6 @@
-const searchControllers = require('./../controllers/searchControllers.js');
-const express = require('express');
-const router = express.Router();
-router.get('/categoria?', searchControllers.searchAny);
-router.get('/list?', searchControllers.listByZone);
-router.get('/categoria?', searchControllers.searchPrice);
-module.exports = router;
+const searchController = require('./../controllers/searchControllers.js')
+const express = require('express')
+const router = express.Router()
+router.get('/', searchController.searchAny)
+router.get('/:category', searchController.listZone)
+module.exports = router
