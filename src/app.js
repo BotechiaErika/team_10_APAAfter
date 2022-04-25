@@ -1,11 +1,9 @@
 /***********settings****** */
 
-const PORT = 6996;
-const port = process.env.PORT || 6996;
+const PORT = 3030;
+const port = process.env.PORT || 3030;
 const express = require('express');
 const path = require('path');
-
-
 //const extType = path.extname('file');
 //const methodOverride = require('method-override');
 
@@ -27,7 +25,6 @@ app.use(express.urlencoded({ extended: false }));
 //        saveUninitialized: true,
 //    })
 //);
-
 /**************APA MIDDLEWARES***************/
 
 /**************require routes***************/
@@ -50,8 +47,8 @@ app.use('/ApaOwners', apiOwnerRouter);
 //app.use('/buscarTelos', searchRouter);
 app.use('/ApaGame', gameAIRouter);
 app.use('/staff', staffRouter);
-/***********Server listen 6996****** */
+/***********Server listen 3030****** */
 app.listen(port || PORT, () => {
-    console.log('WS LEVANTADO Y CORRIENDO EN 6996');
+    console.log('WS LEVANTADO Y CORRIENDO EN 3030');
 });
 module.exports = app;
